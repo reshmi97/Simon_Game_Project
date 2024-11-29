@@ -21,7 +21,7 @@ $(".btn").click(function(){
 // ERROR IN BELOW FUN
 $(document).keypress(function(){
         if(!started){
-                $("#level-title").text("Level"+level);
+                $("#level-title").text("Level "+level);
                 nextSequence();
                 started=true;
         }
@@ -32,7 +32,7 @@ function nextSequence(){
         level++;
         //step 7
         //document.querySelector("h1").innerHTML("LEVEL"+level);
-        $("#level-title").text("Level"+ level);
+        $("#level-title").text("Level "+ level);
         //step 2/3
         var randomNumber=Math.floor(Math.random()*4);
         var randomChosenColor=buttonColor[randomNumber];
